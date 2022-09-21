@@ -18,6 +18,9 @@ Simply activate the plugin, and UTM cookies can be set using the following URL s
 
 Currently, the parameters are 'utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_term'. Support for custom parameters will be added in the future.
 
+= How long will the cookies be set? =
+
+Cookies will clear after 30 days. Support for custom time will be added in the future.
 
 == Changelog ==
 
