@@ -4,6 +4,7 @@ Plugin Name:	UTM Cookies
 Description:	A basic plugin that sets cookies based on UTM parameters in the URL, if they are found.
 Version:		1.0.0
 Author:			Pat Monette
+Author URI:     https://www.ontarioseo.ca/team/patrick-monette
 */
 
 require 'plugin-update-checker/plugin-update-checker.php';
