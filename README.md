@@ -7,4 +7,4 @@ A basic WordPress plugin that adds a function on init that sets cookies based on
 
 Simply activate the plugin, and UTM cookies can be set using the following URL structure (replace the domain with your own, and replace VALUE with your values):
 
-https://example.com/?utm_campaign=VALUE&utm_adgroup=VALUE&utm_keyword=VALUE&utm_source=VALUE&utm_medium=VALUE
+https://example.com/?utm_source=VALUE&utm_medium=VALUE&utm_campaign=VALUE&utm_adgroup=VALUE&utm_term=VALUE

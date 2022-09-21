@@ -7,14 +7,15 @@ Author:			Ontario SEO
 */
 
 function set_utm_cookies() {
-    $cookies = array('utm_campaign', 'utm_adgroup', 'utm_keyword', 'utm_source', 'utm_medium');
 
+    // Store all of the UTM parameters we'll be using in an array
+    $cookies = array('utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_term');
     
-    foreach($cookies as $cookie_name) { // Loop through each cookie name in the $cookies variable
+    foreach($cookies as $cookie_name) { // Loop through each cookie name in the $cookies array
 
         if (isset($_GET[$cookie_name])) { // If there is a parameter set, execute the following
 
-            if(isset($_COOKIE[$cookie_name])) { // If cookie was already set, remove the cookie.
+            if(isset($_COOKIE[$cookie_name])) { // If cookie was already set, remove the cookie, so we can set it again after.
                 unset( $_COOKIE[$cookie_name] );
                 setcookie($cookie_name, '', time() - ( 15 * 60 ), "/" );
             }
