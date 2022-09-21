@@ -10,7 +10,7 @@ require 'plugin-update-checker/plugin-update-checker.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'https://plugins.ihearttraffic.ca/wp-update-server/?action=get_metadata&slug=utm-cookies', //Metadata URL.
     __FILE__, //Full path to the main plugin file.
-    'plugin-directory-name' //Plugin slug. Usually it's the same as the name of the directory.
+    'utm-cookies' //Plugin slug. Usually it's the same as the name of the directory.
 );
 
 function set_utm_cookies() {
