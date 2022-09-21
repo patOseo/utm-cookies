@@ -24,5 +24,8 @@ Cookies will clear after 30 days. Support for custom time will be added in the f
 
 == Changelog ==
 
+= 1.0.1 =
+* Readme updates and installed plugin update checker.
+
 = 1.0 =
 * Initial plugin version. 
