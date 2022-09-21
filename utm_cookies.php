@@ -2,7 +2,7 @@
 /*
 Plugin Name:	UTM Cookies
 Description:	A basic plugin that sets cookies based on UTM parameters in the URL, if they are found.
-Version:		1.0.1
+Version:		1.0.2
 Author:			Pat Monette
 Author URI:     https://www.ontarioseo.ca/team/patrick-monette
 */
@@ -22,6 +22,8 @@ function set_utm_cookies() {
     foreach($cookies as $cookie_name) { // Loop through each cookie name in the $cookies array
 
         if (isset($_GET[$cookie_name])) { // If there is a parameter set, execute the following
+
+            define('DONOTCACHEPAGE', true);
 
             if(isset($_COOKIE[$cookie_name])) { // If cookie was already set, remove the cookie, so we can set it again after.
                 unset( $_COOKIE[$cookie_name] );
