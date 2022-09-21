@@ -3,7 +3,7 @@
 Plugin Name:	UTM Cookies
 Description:	A basic plugin that sets cookies based on UTM parameters in the URL, if they are found.
 Version:		1.0.0
-Author:			Ontario SEO
+Author:			Pat Monette
 */
 
 function set_utm_cookies() {
