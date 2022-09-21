@@ -1,6 +1,6 @@
 # UTM Cookies #
 
-A basic plugin that adds a function on init that sets cookies based on UTM parameters, if they are found.
+A basic WordPress plugin that adds a function on init that sets cookies based on UTM parameters, if they are found.
 
 
 ## Usage ##
