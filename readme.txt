@@ -24,6 +24,9 @@ Cookies will clear after 30 days. Support for custom time will be added in the f
 
 == Changelog ==
 
+= 1.0.3 =
+* Added Gravity Form field pre-population.
+
 = 1.0.2 =
 * Prevents page caching when UTM parameters are set.
 
