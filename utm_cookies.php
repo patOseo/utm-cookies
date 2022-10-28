@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name:	UTM Cookies
-Description:	A basic plugin that sets cookies based on UTM parameters in the URL, if they are found.
-Version:		1.0.3
+Description:	A basic plugin that sets UTM parameter cookies if they are found in the URL.
+Version:		1.0.4
 Author:			Pat Monette
 Author URI:     https://www.ontarioseo.ca/team/patrick-monette
 */
@@ -21,7 +21,7 @@ Set the cookies from UTM parameters
 function set_utm_cookies() {
 
     // Store all of the UTM parameters we'll be using in an array
-    $cookies = array('utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_term');
+    $cookies = array('utm_source', 'utm_medium', 'utm_campaign', 'campaignname', 'utm_adgroup', 'adgroupname', 'utm_term', 'keyword', 'utm_content');
     
     foreach($cookies as $cookie_name) { // Loop through each cookie name in the $cookies array
 
@@ -90,5 +90,41 @@ function populate_utm_term( $value ) {
         return $_COOKIE['utm_term'];
     } elseif(isset($_GET['utm_term'])) {
         return $_GET['utm_term'];
+    }
+}
+
+add_filter( 'gform_field_value_utm_content', 'populate_utm_content' );
+function populate_utm_content( $value ) {
+    if(isset($_COOKIE['utm_content'])) {
+        return $_COOKIE['utm_content'];
+    } elseif(isset($_GET['utm_content'])) {
+        return $_GET['utm_content'];
+    }
+}
+
+add_filter( 'gform_field_value_campaignname', 'populate_campaignname' );
+function populate_campaignname( $value ) {
+    if(isset($_COOKIE['campaignname'])) {
+        return $_COOKIE['campaignname'];
+    } elseif(isset($_GET['campaignname'])) {
+        return $_GET['campaignname'];
+    }
+}
+
+add_filter( 'gform_field_value_adgroupname', 'populate_adgroupname' );
+function populate_adgroupname( $value ) {
+    if(isset($_COOKIE['adgroupname'])) {
+        return $_COOKIE['adgroupname'];
+    } elseif(isset($_GET['adgroupname'])) {
+        return $_GET['adgroupname'];
+    }
+}
+
+add_filter( 'gform_field_value_keyword', 'populate_keyword' );
+function populate_keyword( $value ) {
+    if(isset($_COOKIE['keyword'])) {
+        return $_COOKIE['keyword'];
+    } elseif(isset($_GET['keyword'])) {
+        return $_GET['keyword'];
     }
 }

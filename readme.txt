@@ -16,13 +16,16 @@ Simply activate the plugin, and UTM cookies can be set using the following URL s
 
 = What parameters work with this plugin? =
 
-Currently, the parameters are 'utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_term'. Support for custom parameters will be added in the future.
+Currently, the parameters are 'utm_source', 'utm_medium', 'utm_campaign', 'utm_adgroup', 'utm_term', 'utm_content', 'keyword', 'campaignname', 'adgroupname',. Support for custom parameters will be added in the future.
 
 = How long will the cookies be set? =
 
 Cookies will clear after 30 days. Support for custom time will be added in the future.
 
 == Changelog ==
+
+= 1.0.4 =
+* Added additional parameters.
 
 = 1.0.3 =
 * Added Gravity Form field pre-population.
