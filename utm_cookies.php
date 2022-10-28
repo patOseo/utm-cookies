@@ -14,6 +14,9 @@ $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'utm-cookies' //Plugin slug. Usually it's the same as the name of the directory.
 );
 
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
 /*
 Set the cookies from UTM parameters
 */
