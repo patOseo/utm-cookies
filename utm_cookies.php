@@ -9,13 +9,10 @@ Author URI:     https://www.ontarioseo.ca/team/patrick-monette
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/patOseo/utm-cookies.git',
+    'https://plugins.ihearttraffic.ca/wp-update-server/?action=get_metadata&slug=utm-cookies', //Metadata URL.
     __FILE__, //Full path to the main plugin file.
     'utm-cookies' //Plugin slug. Usually it's the same as the name of the directory.
 );
-
-//Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
 
 /*
 Set the cookies from UTM parameters
