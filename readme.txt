@@ -1,5 +1,5 @@
 === UTM Cookies ===
-Tested up to: 6.0.2
+Tested up to: 6.0.3
 Requires PHP: 7.0
 
 A basic plugin that adds a function on init that sets cookies based on UTM parameters, if they are found.
